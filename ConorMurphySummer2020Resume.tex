@@ -1,0 +1,242 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{helvet}
+
+\usepackage[charter]{mathdesign} % Bitstream Charter
+% \usepackage{newpxtext,newpxmath} % Palatino
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.25in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    {#1}{#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemNoBullet}[2]{
+  \item[]\small{
+    \hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item[]
+  \begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+      \hspace{-10pt}\textbf{#1} & #2 \\
+      \hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% custom commands
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  \small \textbf{\huge CONOR MURPHY}\\  
+  \vspace{4pt}
+  \href{mailto:cmurph29@nd.edu}{\color{blue}\underline{cmurph29@nd.edu}} $\vert$
+  773 724 9888 $\vert$ Chicago, IL 60630 $\vert$
+  \href{https://github.com/cnrmrphy}{\color{blue}\underline{GitHub}} $\vert$
+  \href{https://www.linkedin.com/in/cnrmrphy/}{\color{blue}\underline{LinkedIn}} 
+  
+\end{center}
+
+%-----------EDUCATION-----------------
+\shorterSection{\textbf{Education}}
+
+\vspace{2pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Notre Dame}{Notre Dame, IN}
+      {College of Engineering, B.S. Computer Science;  GPA: 3.51}{Aug. 2018 - May 2022}{
+      \resumeItemNoBullet{Relevant Coursework}{Data Structures, Systems Programming, Discrete Math, Logic Design}
+    }
+    \vspace{3pt}
+    \resumeSubheading
+      {Saint Patrick High School}{Chicago, IL}
+      {GPA: 3.99} {Aug. 2014 - May. 2018}
+  \resumeSubHeadingListEnd
+  
+  \vspace{3pt}
+  
+%-------------------------------------------
+%-----------SKILLS-----------------
+\vspace{2pt}
+\shorterSection{\textbf{Skills}}
+  \resumeSubHeadingListStart
+  \small
+    \item{
+     {C/C++, Unix, Python, Javascript, VueJS, MATLAB, HTML, CSS, Git, Microsoft Word, Excel, Powerpoint}
+    }
+    \vspace{-5pt}
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\shorterSection{\textbf{Experience}}
+  \resumeSubHeadingListStart
+    
+    %GradSchool
+    \resumeSubheading
+      {The Graduate School, University of Notre Dame}{Notre Dame, IN}
+      {Graduate Enrollment Management Student Assistant}{August 2019-May 2020}
+        \resumeItemListStart
+        \resumeItem{}
+          {Handled initial review of 2019-2020 application rounds}
+        \resumeItem{}
+          {Designed various materials for official communication to potential applicants}
+      \resumeItemListEnd
+      
+      
+      \vspace{-2pt}
+      
+      
+    
+    \resumeSubheading
+        {Office of the Executive Director, Center for Social Concerns, University of Notre Dame}{Notre Dame, IN}{Student Administrative Assistant}{September 2018-May 2019}
+            \resumeItemListStart
+            \resumeItem{}
+                {Gathered preliminary information relevant to upcoming research proposals}
+            \resumeItem{}
+                {Prepared marketing and organizational materials for the Center’s internal}
+            \resumeItem{}
+                {Completed various administrative tasks under direction from the Executive Director/Executive
+Assistant}
+      \resumeItemListEnd
+    
+    \vspace{-2pt}
+
+    \resumeSubheading
+      {Ridgemoor Country Club}{Harwood Heights, IL}
+      {Golf Caddie}{2016 - Present}
+
+  \resumeSubHeadingListEnd
+  
+  \vspace{-3pt}
+
+
+%-----------PROJECTS-----------------
+\shorterSection{\textbf{Projects}}
+  \resumeSubHeadingListStart
+    
+    % 
+    \resumeSubheading
+      {Spidey.c Webserver}{Notre Dame, IN}
+      {CSE 20289: Systems Programming}{April-May 2020}
+        \resumeItemListStart
+        \resumeItem{}
+          {Worked with one other student to build an HTTP 1.0 webserver in C that can handle traffic in single or forking mode}
+        \resumeItem{}
+          {Functionality includes serving/traversing directory listings, displaying images and txt files, and running bash/Python CGI scripts}
+        \resumeItem{}
+          {Utilized an AWS instance to run the server permanently and accept global traffic}
+      \resumeItemListEnd
+      
+    \vspace{-3pt}
+    % 
+    \resumeSubheading
+      {CrossReference}{Chicago, IL}
+      {Personal Project}{March 2020}
+        \resumeItemListStart
+        \resumeItem{}
+          {Developed a Python CLI tool to cross reference films on Letterboxd watchlists with preferred streaming services}
+        \resumeItem{}
+          {Gained experience in using Python libraries to handle webscraping and making API requests}
+      \resumeItemListEnd
+      
+    \vspace{-3pt}
+    % 
+    \resumeSubheading
+      {MATLAB Battleship AI}{Notre Dame, IN}
+      {EG10112: Into to Engineering II}{Spring 2019}
+        \resumeItemListStart
+        \resumeItem{}
+          {Worked with a student team to develop attack algorithms for the board game Battleship in MATLAB}
+        \resumeItem{}
+          {Implemented comprehensive GUI to allow users to run tests of each algorithm and visualize results over hundreds of games at once, as well as visually represent a full game in realtime with each algorithm}
+      \resumeItemListEnd
+      
+    \vspace{-3pt}
+      
+    % 
+    \resumeSubheading
+      {Inspectus Minimum Viable Product}{South Bend, IN}
+      {Codeseed}{Summer-Fall 2019}
+        \resumeItemListStart
+        \resumeItem{}
+          {Paired with a local restaurant compliance startup to develop a minimum viable product web-app}
+        \resumeItem{}
+          {Work conducted through student group CodeSeed}
+      \resumeItemListEnd
+      
+    \vspace{-3pt}
+    
+    
+  \resumeSubHeadingListEnd
+  
+  \vspace{-3pt}
+%-----------ACTIVITIES & Awards-----------------
+\shorterSection{\textbf{Activities}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Codeseed}{Notre Dame, IN}
+      {Student-led software development group}{Summer 2019 - Present}
+      
+      \vspace{-4pt}
+      
+     
+
+  \resumeSubHeadingListEnd
+  
+  \vspace{-10pt}
+
+\end{document}
