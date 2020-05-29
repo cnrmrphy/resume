@@ -1,1 +1,1 @@
-[Direct Link to Pdf](https://cmurph.me/resume/Resume.pdf)
+[Direct Link to Pdf](https://cnrmrphy.github.io/resume/Resume.pdf)
